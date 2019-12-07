@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: #eee;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .nav-bar {
@@ -10,7 +11,8 @@ body {
   background: grey;
   color: black;
   padding: 11px;
-  font-size: 22px;
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 36px;
   text-align: right;
 }
 .nav-bar b {
@@ -67,6 +69,19 @@ body {
   padding: 11px;
   margin-left: 240px;
   max-width: 900px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+  border-radius: 50%;
 }
 
 .collection {
@@ -112,20 +127,24 @@ height: 100%;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #4CAF50;
   color: white;
   transform: rotateY(180deg);
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 12px
 }
 
 .footnav-bar {
-  position: sticky;
-  top: 0;
+  position: fixed;
   height: 50px;
   background: rgb(174, 184, 176);
   color: black;
   padding: 11px;
   font-size: 22px;
   text-align: right;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
