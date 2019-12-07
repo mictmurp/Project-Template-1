@@ -6,11 +6,67 @@ body {
 .nav-bar {
   position: sticky;
   top: 0;
+  height: 200px;
   background: grey;
   color: black;
   padding: 11px;
   font-size: 22px;
-  text-align: center;
+  text-align: right;
+}
+.nav-bar b {
+  position: sticky;
+  top: 0;
+  height: 200px;
+  background: grey;
+  color: black;
+  padding: 11px;
+  font-size: 22px;
+  text-align: right;
+}
+/*<a href="#" class="w3-bar-item w3-button">Link 1</a>*/
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  margin-top: 200px;
+  left: -160px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 200px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+  #mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: #49111c;
+}
+
+#blog {
+  top: 80px;
+  background-color: #49111c;
+}
+
+#projects {
+  top: 140px;
+  background-color: #49111c;
+}
+
+#contact {
+  top: 200px;
+  background-color: #49111c;
+}
+
+.announce {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 11px;
+  margin-left: 240px;
+  max-width: 900px;
 }
 
 .collection {
@@ -18,7 +74,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   padding: 11px;
-  margin: auto;
+  margin-left: 240px;
   max-width: 900px;
 }
 
@@ -50,14 +106,26 @@ body {
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+width: 100%;
+object-fit: cover;
+height: 100%;
 }
 
 .flip-card-back {
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+}
+
+.footnav-bar {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background: rgb(174, 184, 176);
+  color: black;
+  padding: 11px;
+  font-size: 22px;
+  text-align: right;
 }
 
 @media only screen and (max-width: 600px) {

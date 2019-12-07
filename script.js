@@ -1,12 +1,18 @@
 // Let's start with some default data.
 var myData = [
   {
-    front: "Title 1",
-    back: "Detail 1"
+    front: "PlumberWrench.png",
+    /*credit: "Photo by Wikipedia",
+    filename: "PlumberWrench.png"*/
+    back: "<b>Plumber Wrench</b></br>Handtool</br>A plumber wrench is a pipe wrench used to rotate plumbing pipes. It is adjusted to different pipe diameters by rotating the key ring. Its advantage is that it grips with significant force without needing to engage a nut."
   },
   {
-    front: "Title 2",
-    back: "Detail 2"
+    front: "CompoundMiterSaw.png",
+    back: "<b>Compound Miter Saw</b></br>Power Tool</br>A specialized tool that lets you make cuts at a variety of angles featuring blades that pivot left and right for angled cuts and tilt in a single direction for beveled cuts. Manipulating the saw on both of its axes at once yields a compound miter cut."
+  },
+  {
+    front: "HammerDrill.png",
+    back: "<b>Hammer Drill</b></br>Power Tool</br>A power drill that works by delivering a rapid succession of blows, used chiefly for drilling in masonry or rock."
   }
 ];
 
@@ -23,7 +29,7 @@ function render() {
       <div class="item flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            ${item.front}
+           <img src="imgs/${item.front}">
           </div>
           <div class="flip-card-back">
             ${item.back}
