@@ -8,16 +8,26 @@ body {
   position: sticky;
   top: 0;
   height: 200px;
-  background: grey;
   color: black;
   padding: 11px;
-  font-family: 'Sulphur Point', sans-serif;
-  font-size: 36px;
   text-align: right;
-  letter-spacing: 4px;
+ }
+
+ .triangle-right {
+  position: absolute;
+	width: 90%;
+	height: 0;
+	border-top: 200px solid transparent;
+	border-left: 620px solid #555;
+	border-bottom: 1px solid transparent;
+  }
+
+.nav-left {
+  font-size: 36px;
+  letter-spacing: 6px;
 }
 
-.btn {
+/*.btn {
   border: 1px solid black;
   width: 15%;
   background-color: white;
@@ -29,7 +39,7 @@ body {
 }
 
 .btn:hover {
-  background-color: rgb(174, 184, 176);
+  background-color: rgb(174, 184, 176);*/
 }
 .nav-bar b {
   position: sticky;
@@ -119,8 +129,8 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-family: 'Noto Sans TC', sans-serif;
-  border-radius: 50%;
+  border-radius: 100%;
+  box-shadow: 1px 1px 5px black;
 }
 
 .collection {
