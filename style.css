@@ -15,7 +15,7 @@ body {
 
  .triangle-right {
   position: absolute;
-	width: 90%;
+	width: 0;
 	height: 0;
 	border-top: 200px solid transparent;
 	border-left: 620px solid #555;
@@ -55,13 +55,14 @@ body {
 #mySidenav a {
   position: absolute; /* Position them relative to the browser window */
   margin-top: 200px;
-  left: -160px; /* Position them outside of the screen */
+  left: -100px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
   padding: 15px; /* 15px padding */
   width: 200px; /* Set a specific width */
   text-decoration: none; /* Remove underline */
   font-size: 20px; /* Increase font size */
   color: white; /* White text color */
+  text-align: right;
   border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
 }
   #mySidenav a:hover {
@@ -69,44 +70,44 @@ body {
 }
 
 /* The about link: 20px from the top with a green background */
-#community {
+#home {
   top: 20px;
   background-color: #49111c;
 }
 
-#resources {
+#community {
   top: 80px;
   background-color: #49111c;
 }
 
-#projects {
+#resources {
   top: 140px;
   background-color: #49111c;
 }
 
-#contact {
+#projects {
   top: 200px;
   background-color: #49111c;
 }
 
-#future1 {
+#contact {
   top: 260px;
   background-color: #49111c;
 }
 
 
-#future2 {
+#future1 {
   top: 320px;
   background-color: #49111c;
 }
 
 
-#future3 {
+#future2 {
   top: 380px;
   background-color: #49111c;
 }
 
-#future4 {
+#future3 {
   top: 440px;
   background-color: #49111c;
 }
